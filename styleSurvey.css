@@ -1,0 +1,39 @@
+
+
+p {color: white; font-family: monospace; font-size: 20px; text-align: center;}
+
+body {
+ background-image: url("https://mrcellophane13.files.wordpress.com/2011/08/0.jpg");
+ background-size: 100% 100%;
+    background-repeat: no-repeat;
+ background-color: #cccccc;
+}
+
+label {color:antiquewhite; font-size: 20px }
+
+#survey-form {
+   text-align: center;
+}
+
+h1 {color: rgb(255, 0, 191); font-family: brush script mt; font-size: 80; text-align: center;
+   background-color: black;
+   border: 5px dotted gold;}
+ 
+
+ #glow {
+   font-size: 80px;
+   color: #fff;
+   text-align: center;
+   animation: glow 1s ease-in-out infinite alternate;
+ }
+ @-webkit-keyframes glow {
+   from {
+     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+   }
+   
+   to {
+     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+   }
+ 
+ }
+ 

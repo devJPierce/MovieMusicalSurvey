@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styleSurvey.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="text-center" id="glow">Movie Musical Survey Form</h1>
+        <p id="description" class="description text-center">
+          <b>Let's decide together what musicals should be turned into feature films!
+          First let's get some information...</b>
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p><b>What do you look for in a musical?</b></p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select a genre</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="realism">Realism</option>
+            <option value="historical">Historical</option>
+            <option value="jukebox">Jukebox</option>
+            <option value="operetta">Operetta</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p><b>How do you think film adaptations affect the source material?</b></p>
+          <label>
+            <input
+              name="what-affect"
+              value="positively effects"
+              type="radio"
+              class="input-radio"
+              checked
+            /><b>Positively Effects</b></label
+          >
+          <label>
+            <input
+              name="what-affect"
+              value="no effect"
+              type="radio"
+              class="input-radio"
+            /><b>No Effect</b></label
+          >
+
+          <label
+            ><input
+              name="what-affect"
+              value="negatively effects"
+              type="radio"
+              class="input-radio"
+            /><b>Negatively Effects</b></label
+          >
+        </div>
+
+        <div class="form-group">
+          <p><b>What has been your favorite musical adaptation to date?</b></p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select a title</option>
+            <option value="phantom of the opera">Phantom of the Opera</option>
+            <option value="west side story">West Side Story</option>
+            <option value="chicago">Chicago</option>
+            <option value="mama mia">Mama Mia</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            <b>What are some musicals you'd like to see adapted into film?</b>
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="hamilton"
+              type="checkbox"
+              class="input-checkbox"
+            />Hamilton</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="anything goes"
+              type="checkbox"
+              class="input-checkbox"
+            />Anything Goes</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="ragtime"
+              type="checkbox"
+              class="input-checkbox"
+            />Ragtime</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="titanic the musical"
+              type="checkbox"
+              class="input-checkbox"
+            />Titanic the Musical</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="book of mormon"
+              type="checkbox"
+              class="input-checkbox"
+            />Book of Mormon</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="hair"
+              type="checkbox"
+              class="input-checkbox"
+            />Hair</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="newsies"
+              type="checkbox"
+              class="input-checkbox"
+            />Newsies</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="once"
+              type="checkbox"
+              class="input-checkbox"
+            />Once</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="pippin"
+              type="checkbox"
+              class="input-checkbox"
+            />Pippin</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="spring awakening"
+              type="checkbox"
+              class="input-checkbox"
+            />Spring Awakening</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="candide"
+              type="checkbox"
+              class="input-checkbox"
+            />Candide</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p><b>Any musicals we missed?</b></p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your musical here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
